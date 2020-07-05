@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { MovieContext } from "../contexts/MovieContext";
 
 const Nav = () => {
-    const [movies, setMovies] = useContext(MovieContext)
+    const [movies] = useContext(MovieContext)
     return(
         <div className="Nav">
             <h3 className="Nav-brand">Movie Count: {movies.length}</h3>

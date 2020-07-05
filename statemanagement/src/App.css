@@ -6,9 +6,10 @@ body{
 .Nav{
   background-color: lightcoral;
   display: flex;
+  padding: 0px 20px;
 }
 .Nav-brand{
-  padding: 5px;
+  /* padding: 5px; */
 }
 .Nav-link-parent{
   display: flex;
@@ -38,6 +39,10 @@ form > input{
   border: none;
   border-radius: 3px;
   outline: none;
+}
+
+form > input:disabled{
+  cursor: not-allowed;
 }
 
 form > button{

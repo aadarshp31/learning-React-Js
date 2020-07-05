@@ -3,3 +3,22 @@ body{
   color: #ffffff;
   text-align: center;
 }
+.Nav{
+  background-color: lightcoral;
+  display: flex;
+}
+.Nav-brand{
+  padding: 5px;
+}
+.Nav-link-parent{
+  display: flex;
+  justify-content: space-around;
+  width: 40vw;
+  margin-left: auto;
+}
+.Nav-link{
+  margin-left: auto;
+  align-self: center;
+  font-weight: bold;
+  padding: 5px;
+}

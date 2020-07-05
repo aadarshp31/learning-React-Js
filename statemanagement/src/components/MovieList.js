@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Movie from "./Movie";
+import Nav from "./Nav";
 
 const MovieList = () => {
 	const [movies, setMovies] = useState([
@@ -21,10 +22,9 @@ const MovieList = () => {
 	]);
 	return (
 		<div>
-			<hr />
-			{movies.map((movie, index) => {
-				return (<Movie name={movie.name} price={movie.price} key={movie.id} />)
-			})}
+			{movies.map((movie) => (
+				<Movie name={movie.name} price={movie.price} key={movie.id} />
+			))}
 		</div>
 	);
 };

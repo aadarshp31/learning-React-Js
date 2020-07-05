@@ -1,14 +1,15 @@
-import React from 'react';
-import './App.css';
-import MovieList from "./components/MovieList"
+import React from "react";
+import "./App.css";
+import MovieList from "./components/MovieList";
+import Nav from "./components/Nav";
 
 function App() {
-  return (
-    <div>
-      <h1>App Component</h1>
-      <MovieList />
-    </div>
-  );
+	return (
+		<div>
+			<Nav />
+			<MovieList />
+		</div>
+	);
 }
 
 export default App;

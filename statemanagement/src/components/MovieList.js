@@ -1,10 +1,9 @@
 import React, { useState, useContext } from "react";
 import Movie from "./Movie";
-import Nav from "./Nav";
 import { MovieContext } from "../contexts/MovieContext"
 
 const MovieList = () => {
-	const [movies, setMovies] = useContext(MovieContext)
+	const [movies] = useContext(MovieContext)
 	return (
 		<div>
 			{movies.map((movie) => (

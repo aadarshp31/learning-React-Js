@@ -1,25 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Movie from "./Movie";
 import Nav from "./Nav";
+import { MovieContext } from "../contexts/MovieContext"
 
 const MovieList = () => {
-	const [movies, setMovies] = useState([
-		{
-			name: "The Dark Knight",
-			price: "Rs. 100",
-			id: 12345,
-		},
-		{
-			name: "The Killing Joke",
-			price: "Rs. 50",
-			id: 12346,
-		},
-		{
-			name: "Joker",
-			price: "Rs. 40",
-			id: 12347,
-		},
-	]);
+	const [movies, setMovies] = useContext(MovieContext)
 	return (
 		<div>
 			{movies.map((movie) => (

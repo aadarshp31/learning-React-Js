@@ -22,3 +22,36 @@ body{
   font-weight: bold;
   padding: 5px;
 }
+
+form{
+  padding: 20px;
+  max-width: 500px;
+  margin: 10px auto;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+form > input{
+  padding: 8px;
+  margin: 5px 0px;
+  font-size: large;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+form > button{
+  padding: 8px;
+  font-size: large;
+  border: none;
+  border-radius: 3px;
+  background-color: lightcoral;
+  color: #ffffff;
+  font-weight: bold;
+  outline: none;
+  transition: background-color 150ms linear;
+}
+
+form > button:hover{
+  background-color: rgb(185, 77, 77);
+}

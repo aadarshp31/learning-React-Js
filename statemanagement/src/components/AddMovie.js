@@ -13,12 +13,19 @@ const AddMovie = () => {
 	const { name, price, id } = formData;
 
 	const handleChange = (fieldName) => (e) => {
-		setFormData({ ...formData, [fieldName]: e.target.value });
+		fieldName === "price"
+			? setFormData({ ...formData, [fieldName]: "Rs. " + e.target.value })
+			: setFormData({ ...formData, [fieldName]: e.target.value });
 	};
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setMovies([...movies, formData]);
+		setFormData({
+			name: "",
+			price: "",
+			id: id + 1,
+		});
 	};
 
 	return (
@@ -38,7 +45,7 @@ const AddMovie = () => {
 				type="number"
 				name="price"
 				id="price"
-				value={price}
+				value={price.slice(4)}
 				onChange={handleChange("price")}
 				required={true}
 			/>

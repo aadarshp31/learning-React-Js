@@ -55,3 +55,29 @@ form > button{
 form > button:hover{
   background-color: rgb(185, 77, 77);
 }
+
+.Movie-component{
+  background-color: #47535E;
+  padding: 20px;
+  max-width: 500px;
+  margin: 10px auto;
+  border-radius: 10px;
+  transition: background-color 100ms linear;
+}
+
+.Movie-component:hover{
+  background-color: #39434d;
+}
+
+.movie-tile-header{
+  display: flex;
+  justify-content: space-between;
+  color: lightcoral;
+  margin-bottom: 10px;
+}
+
+.movie-tile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

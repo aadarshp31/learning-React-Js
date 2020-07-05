@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import Movie from "./Movie";
 import { MovieContext } from "../contexts/MovieContext"
 
@@ -7,7 +7,7 @@ const MovieList = () => {
 	return (
 		<div>
 			{movies.map((movie) => (
-				<Movie name={movie.name} price={movie.price} key={movie.id} />
+				<Movie name={movie.name} price={movie.price} id={movie.id} key={movie.id} />
 			))}
 		</div>
 	);
